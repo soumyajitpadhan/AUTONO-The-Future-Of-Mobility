@@ -3,7 +3,7 @@ import Technology from '../../assets/Technology/technology.jpg'
 
 const HeroTech = () => {
     return (
-        <div data-aos='fade-up' data-aos-delay='250' className='font-montserrat'>
+        <div className='font-montserrat'>
             <div className='relative min-h-screen sm:h-[120vh] bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${Technology})` }}>
                 <div className='absolute inset-0 flex justify-center top-10'>
                     <div className='max-w-4xl text-center'>
