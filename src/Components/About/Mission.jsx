@@ -5,7 +5,7 @@ import FuturisticCar from '../../assets/About/Futuristic_Car.png'
 const Mission = () => {
     return (
         <div className='font-montserrat border-b-2 border-gray-500'>
-            <div className='md:flex md:flex-row-reverse justify-evenly lg:mt-20 xl:justify-between xl:px-36'>
+            <div data-aos='fade-up' data-aos-delay='250' className='md:flex md:flex-row-reverse justify-evenly lg:mt-20 xl:justify-between xl:px-36'>
                 <div className='p-10'>
                     <img src={FuturisticCar} alt="" className='m-auto rounded-xl md:h-[500px] lg:h-[550px] xl:h-[600px]' />
                 </div>
