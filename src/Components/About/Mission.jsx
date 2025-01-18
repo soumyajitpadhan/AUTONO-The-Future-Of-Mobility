@@ -1,15 +1,10 @@
 import React from 'react'
 import FuturisticCar from '../../assets/About/Futuristic_Car.png'
-import Finance from '../../assets/About/Finance.png'
-import LondonPost from '../../assets/About/London_post.png'
-import PaloAltoTribunal from '../../assets/About/Palo_Alto_Tribunal.png'
-import RCR from '../../assets/About/RCR.png'
-import TBReview from '../../assets/About/TB_Review.png'
 
 
 const Mission = () => {
     return (
-        <div className='font-montserrat'>
+        <div className='font-montserrat border-b-2 border-gray-500'>
             <div className='md:flex md:flex-row-reverse justify-evenly lg:mt-20 xl:justify-between xl:px-36'>
                 <div className='p-10'>
                     <img src={FuturisticCar} alt="" className='m-auto rounded-xl md:h-[500px] lg:h-[550px] xl:h-[600px]' />
