@@ -61,7 +61,7 @@ const Careers = () => {
                     <h3 className='text-xs tracking-widest md:text-sm'>CAREERS</h3>
                     <p className='text-lg tracking-wider leading-relaxed xl:tracking-widest xl:leading-loose xl:text-2xl'>We're looking for innovative talent to join our team. See all positions and submit your CV.</p>
                     <div className='w-40 flex border border-white rounded-lg'>
-                        <button className='py-2 px-3 rounded-l-lg hover:bg-white hover:text-black transition duration-300 ease-in'>Read More</button>
+                        <button className='py-2 px-3 rounded-l-lg hover:bg-white hover:text-black transition duration-300 ease-in'>Openings</button>
                         <button className='border-l border-white px-2'><ArrowRight /></button>
                     </div>
                     <div className='absolute border-l border-white h-[100%] sm:h-[100%] xl:h-[110%] left-[8%] md:left-[0%] lg:left-0'></div>
@@ -89,6 +89,10 @@ const Careers = () => {
                                             <h3 className='text-2xl tracking-wide xl:text-3xl'>{item.title}</h3>
                                             <p className='text-sm text-gray-300 xl:text-lg'>{item.location}</p>
                                             <p className='text-base tracking-wide leading-relaxed xl:text-xl xl:tracking-widest xl:leading-loose'>{item.responsibilities}</p>
+                                            <div className='w-40 flex border border-white rounded-lg'>
+                                                <button className='py-2 px-3 rounded-l-lg hover:bg-white hover:text-black transition duration-300 ease-in'>Apply Now</button>
+                                                <button className='border-l border-white px-2'><ArrowRight /></button>
+                                            </div>
                                         </div>
                                     </SwiperSlide>
                                 )
