@@ -2,7 +2,7 @@ import React from 'react'
 import Landing_Image from '../../assets/Home/hero.jpg'
 const Hero = () => {
   return (
-    <div data-aos='fade-up' data-aos-delay='250'>
+    <div>
       <div className='relative h-screen bg-cover bg-center font-montserrat' style={{ backgroundImage: `url(${Landing_Image})` }}>
         <div className='absolute inset-0 flex justify-center top-32 max-w-md mx-auto sm:top-36 sm:max-w-xl sm:mx-auto md:max-w-3xl md:top-28 lg:top-28 xl:top-32'>
           <div className='text-center'>
