@@ -4,6 +4,7 @@ import HeroCareers from './HeroCareers'
 import LocationCareers from './LocationCareers'
 import JobOpenings from './JobOpenings'
 import JobLists from './JobLists'
+import Footer from '../Home/Footer'
 
 const Careers = () => {
     return (
@@ -13,6 +14,7 @@ const Careers = () => {
             <LocationCareers/>
             <JobOpenings/>
             <JobLists/>
+            <Footer/>
         </div>
     )
 }
