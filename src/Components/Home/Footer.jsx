@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer data-aos='fade-up' data-aos-delay='250' className='font-montserrat px-4 md:px-16 lg:px-28 py-10 border-t border-gray-600'>
+    <footer className='font-montserrat px-4 md:px-16 lg:px-28 py-10 border-t border-gray-600'>
       <div className='grid grid-cols-1 md:grid-cols-3'>
         <div>
           <h2 className='text-3xl font-bold mb-5'>Contact Us</h2>
