@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../Home/Navbar'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux';
+import { ArrowRight } from 'lucide-react'
+import Footer from '../Home/Footer';
 
 const JobDetails = () => {
 
@@ -50,12 +52,12 @@ const JobDetails = () => {
                 </div>
 
                 {/* Second Section */}
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-5 my-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-5 my-10 w-full mx-auto md:gap-14 lg:max-w-4xl xl:max-w-7xl xl:gap-44'>
                     <div>
                         <h3 className='ml-5 mb-3 text-2xl font-bold border-b border-black inline-block tracking-wider'>Responsibilities</h3>
                         <ul className=' list-disc pl-5'>
                             {job.responsibilities.map((responsibility, index) => (
-                                <li key={index}>{responsibility}</li>
+                                <li key={index} className='mb-5 tracking-wider md:text-lg xl:text-xl xl:leading-relaxed xl:tracking-wider'>{responsibility}</li>
                             ))}
                         </ul>
                     </div>
@@ -63,12 +65,32 @@ const JobDetails = () => {
                         <h3 className='ml-5 mb-3 text-2xl font-bold border-b border-black inline-block tracking-wider'>Qualifications</h3>
                         <ul className=' list-disc pl-5'>
                             {job.qualifications.map((responsibility, index) => (
-                                <li key={index}>{responsibility}</li>
+                                <li key={index} className='mb-5 tracking-wider md:text-lg xl:text-xl xl:leading-relaxed xl:tracking-wider'>{responsibility}</li>
                             ))}
                         </ul>
                     </div>
                 </div>
+
+                {/* Third Section */}
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-5 my-10 w-full mx-auto md:gap-14 lg:max-w-4xl xl:max-w-7xl xl:gap-44'>
+                    <div>
+                        <h3 className='ml-5 mb-3 text-2xl font-bold border-b border-black inline-block tracking-wider'>Benefits</h3>
+                        <ul className=' list-disc pl-5'>
+                            {job.benefits.map((responsibility, index) => (
+                                <li key={index} className='mb-5 tracking-wider md:text-lg xl:text-xl xl:leading-relaxed xl:tracking-wider'>{responsibility}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='flex justify-center mb-20'>
+                    <div className='flex border border-black rounded-lg w-52 xl:w-60'>
+                        <button className='px-5 py-3 xl:px-8 text-xl rounded-l-lg hover:bg-black hover:text-white transition duration-300 ease-in'>Apply Now</button>
+                        <button className='border-l border-black px-3 xl:px-4'><ArrowRight /></button>
+                    </div>
+                </div>
             </div>
+            <Footer />
         </div>
     )
 }
