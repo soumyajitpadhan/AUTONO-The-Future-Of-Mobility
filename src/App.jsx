@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import Careers from './Components/Careers/Careers'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import JobDetails from './Components/Careers/JobDetails'
 
 const App = () => {
 
@@ -32,6 +33,10 @@ const App = () => {
       path: '/careers',
       element: <Careers />
     },
+    {
+      path: '/job/:id',
+      element: <JobDetails/>
+    }
   ]
 
   return (

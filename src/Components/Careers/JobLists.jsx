@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchJobPostings, setCurrentPage } from '../../redux/actions';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
+import { useNavigate } from 'react-router-dom';
 
 
 const JobLists = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const loading = useSelector((state) => state.loading);
     const jobPostings = useSelector((state) => state.jobPostings);
@@ -46,6 +48,11 @@ const JobLists = () => {
         return <div className='text-center text-red-500 my-10'>Error: {error}</div>;
     }
 
+    const handleJobDetails = (jobId) => {
+        navigate(`/job/${jobId}`);
+    }
+
+
     return (
         <div className='bg-black text-white font-montserrat'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 py-10 px-5 md:px-10'>
@@ -57,8 +64,8 @@ const JobLists = () => {
                             <h3 className='text-xl tracking-wider'>{job.title}</h3>
                             <p className='text-gray-400'>{job.location}</p>
                             <p className=' tracking-wider leading-relaxed'>{job.description}</p>
-                            <div className='w-40 flex border border-white rounded-lg'>
-                                <button className='py-2 px-3 rounded-l-lg hover:bg-white hover:text-black transition duration-300 ease-in'>Apply Now</button>
+                            <div className='w-44 flex border border-white rounded-lg'>
+                                <button onClick={() => handleJobDetails(job.id)} className='py-2 px-3 rounded-l-lg hover:bg-white hover:text-black transition duration-300 ease-in'>View Details</button>
                                 <button className='border-l border-white px-2'><ArrowRight /></button>
                             </div>
                         </div>
