@@ -7,6 +7,7 @@ import Careers from './Components/Careers/Careers'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import JobDetails from './Components/Careers/JobDetails'
+import ApplicationForm from './Components/Careers/ApplicationForm'
 
 const App = () => {
 
@@ -35,7 +36,11 @@ const App = () => {
     },
     {
       path: '/job/:id',
-      element: <JobDetails/>
+      element: <JobDetails />
+    },
+    {
+      path: '/job-application',
+      element: <ApplicationForm />
     }
   ]
 
