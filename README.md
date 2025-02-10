@@ -32,7 +32,7 @@ Here’s the tech powering the magic behind the scenes:
 | **react-router-dom** | Routing for React applications.                 |
 | **react-spinners**   | A collection of loading spinners for React.     |
 | **redux-thunk**      | Middleware for handling asynchronous actions in Redux. |
-
+| **Firebase**         | Cloud platform for backend services like authentication and real-time database. |
 
 --- 
 
