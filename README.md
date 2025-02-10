@@ -1,6 +1,6 @@
 # Autovate
 
-Autovate is an app that enables cars to drive themselves. It uses smart technology and AI to help the car make decisions based on its surroundings. This helps the car navigate tricky roads, adapt to changing conditions, and keep everyone safe. Autovate’s goal is to make driving safer, smarter, and more efficient with advanced technology.
+Autovate is an AI-powered self-driving app that enables cars to navigate safely and efficiently by adapting to road conditions in real-time. This project is a cloned version for learning and development purposes.
 
 ---
 
