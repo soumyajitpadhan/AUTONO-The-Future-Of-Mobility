@@ -3,9 +3,17 @@ import Navbar from '../Home/Navbar';
 import axios from 'axios';
 import ClipLoader from "react-spinners/ClipLoader";
 import { toast, Toaster } from 'react-hot-toast'
-
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const ApplicationForm = () => {
+
+    const { jobId } = useParams();
+
+    const jobPostings = useSelector((state) => state.jobPostings);
+
+    const job = jobPostings.find((job) => job.id == jobId);
+
     const [isLoading, setIsLoading] = useState(false);
 
     const formRefs = {
@@ -13,7 +21,6 @@ const ApplicationForm = () => {
         lastNameRef: useRef(),
         emailRef: useRef(),
         phoneRef: useRef(),
-        positionRef: useRef(),
         cvRef: useRef(),
         linkedinRef: useRef(),
         commentsRef: useRef(),
@@ -30,7 +37,7 @@ const ApplicationForm = () => {
             fullName,
             email: formRefs.emailRef.current.value,
             phone: formRefs.phoneRef.current.value,
-            position: formRefs.positionRef.current.value,
+            position: job ? job.title : "",
             cv: formRefs.cvRef.current.value,
             linkedin: formRefs.linkedinRef.current.value,
             comments: formRefs.commentsRef.current.value,
@@ -80,13 +87,15 @@ const ApplicationForm = () => {
                             <input type='tel' id='phone' ref={formRefs.phoneRef} className='border border-black w-full mt-1 mb-6 p-2 rounded-md' required />
                         </div>
                         <div>
-                            <label htmlFor="position" className='block tracking-wider'>Position</label>
-                            <select id="position" ref={formRefs.positionRef} className='border border-black w-full mt-1 mb-6 p-3 rounded-md'>
-                                <option value="">Select Position</option>
-                                <option value="Frontend Developer">Frontend Developer</option>
-                                <option value="Backend Developer">Backend Developer</option>
-                                <option value="Full Stack Developer">Full Stack Developer</option>
-                            </select>
+                            <label htmlFor="position" className='block tracking-wider'>Position *</label>
+                            <input
+                                type="text"
+                                id="position"
+                                className='border border-black w-full mt-1 mb-6 p-2 rounded-md'
+                                required
+                                defaultValue={job ? job.title : ""}
+                                readOnly
+                            />
                         </div>
                         <div>
                             <label htmlFor="cv" className='block tracking-wider'>CV URL *</label>

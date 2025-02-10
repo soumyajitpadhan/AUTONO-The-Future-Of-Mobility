@@ -39,7 +39,7 @@ const App = () => {
       element: <JobDetails />
     },
     {
-      path: '/job-application',
+      path: '/job-application/:jobId',
       element: <ApplicationForm />
     }
   ]

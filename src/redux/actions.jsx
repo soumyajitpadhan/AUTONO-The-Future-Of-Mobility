@@ -9,7 +9,7 @@ export function fetchJobPostings(page = 1, limit = 6) {
         dispatch({ type: FETCH_JOB_POSTINGS_REQUEST });
 
         try {
-            let res = await fetch("https://autono-bd811-default-rtdb.firebaseio.com/job_postings.json")
+            let res = await fetch(import.meta.env.VITE_FIREBASE_JOB_POSTINGS_URL)
             const data = await res.json();
 
             const jobPostings = [];

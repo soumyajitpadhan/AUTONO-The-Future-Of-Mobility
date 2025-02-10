@@ -87,7 +87,7 @@ const JobDetails = () => {
 
                 <div className='flex justify-center mb-20'>
                     <div className='flex border border-black rounded-lg w-52 xl:w-60'>
-                        <button className='px-5 py-3 xl:px-8 text-xl rounded-l-lg hover:bg-black hover:text-white transition duration-300 ease-in' onClick={() => navigate('/job-application')}>Apply Now</button>
+                        <button className='px-5 py-3 xl:px-8 text-xl rounded-l-lg hover:bg-black hover:text-white transition duration-300 ease-in' onClick={() => navigate(`/job-application/${id}`)}>Apply Now</button>
                         <button className='border-l border-black px-3 xl:px-4'><ArrowRight /></button>
                     </div>
                 </div>
