@@ -19,7 +19,6 @@ const Navbar = () => {
                             <Link to="/about" className='hover:text-red-500'>About</Link>
                             <Link to="/careers" className='hover:text-red-500'>Careers</Link>
                         </div>
-                        <button className='bg-black text-white px-7 py-1 rounded-md border border-transparent hover:bg-white hover:text-black hover:border hover:border-black transition duration-300 ease-in'>Subscribe</button>
                     </div>
                 </nav>
                 <button
