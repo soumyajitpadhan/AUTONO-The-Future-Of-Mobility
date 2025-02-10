@@ -4,7 +4,7 @@ const Journey = () => {
   const journeyData = [
     {
       year: "2013",
-      title: "AUTONO IS FOUNDED",
+      title: "Autovate IS FOUNDED",
       description: "The beginning of our mission to redefine autonomous vehicles."
     },
     {
@@ -44,7 +44,7 @@ const Journey = () => {
     },
     {
       year: "2022",
-      title: "AUTONO TECHNOLOGY RECEIVES INNOVATION AWARD",
+      title: "Autovate TECHNOLOGY RECEIVES INNOVATION AWARD",
       description: "Recognition for our commitment to groundbreaking advancements."
     },
     {

@@ -11,7 +11,7 @@ const News = () => {
       <div data-aos='fade-up' data-aos-delay='250' className='flex flex-col justify-evenly px-10 h-[80vh] lg:max-w-7xl m-auto'>
         <div className=' relative flex flex-col gap-10 justify-center pl-5'>
           <p className='text-xs md:text-sm lg:text-base'>NEWS</p>
-          <h3 className='text-xl tracking-wider md:text-2xl md:tracking-widest lg:text-3xl'>Autono In The Press</h3>
+          <h3 className='text-xl tracking-wider md:text-2xl md:tracking-widest lg:text-3xl'>Autovate In The Press</h3>
           <div className=' absolute border-l border-white h-24 left-0'></div>
         </div>
         <div className='flex flex-col'>

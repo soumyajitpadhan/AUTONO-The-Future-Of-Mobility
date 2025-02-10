@@ -19,7 +19,7 @@ const Industry = () => {
                 <div className='flex flex-col gap-y-6 pl-14 pr-5 sm:pl-24 md:pl-16 md:w-[50vw] lg:w-[35vw] lg:pl-0 xl:w-[25vw] xl:gap-y-16'>
                     <p className='text-sm tracking-widest'>INDUSTRY</p>
                     <h3 className='text-xl leading-relaxed tracking-widest md:text-2xl xl:text-3xl xl:leading-relaxed'>Our <span className='block'>Partners</span></h3>
-                    <p className='text-sm leading-relaxed lg:text-base lg:tracking-widest lg:leading-relaxed'>Designed and developed the Autono website to showcase our esteemed partners with a clean, modern design. The site highlights collaborations with industry leaders like General Transport, IDI Software, Imogen Cars, and Tri-Nex, ensuring a responsive and engaging user experience across all devices.</p>
+                    <p className='text-sm leading-relaxed lg:text-base lg:tracking-widest lg:leading-relaxed'>Designed and developed the Autovate website to showcase our esteemed partners with a clean, modern design. The site highlights collaborations with industry leaders like General Transport, IDI Software, Imogen Cars, and Tri-Nex, ensuring a responsive and engaging user experience across all devices.</p>
                 </div>
                 <div className='grid grid-rows-2 grid-cols-2 gap-8 px-6 lg:gap-24 lg:px-0'>
                     {

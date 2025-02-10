@@ -14,10 +14,10 @@ const AutonoNumber = () => {
     <div data-aos='fade-up' data-aos-delay='250' className='font-montserrat'>
       <div className='flex flex-col-reverse items-center md:flex-row md:justify-between'>
         <div>
-          <img src={AutonoNumberImage} alt="AutonoNumber" className='md:max-w-md lg:max-w-2xl lg:h-screen xl:max-w-3xl'/>
+          <img src={AutonoNumberImage} alt="AutovateNumber" className='md:max-w-md lg:max-w-2xl lg:h-screen xl:max-w-3xl'/>
         </div>
         <div className='flex flex-col pt-12 gap-y-10 md:mr-16 xl:w-[400px] xl:mr-40'>
-          <p className='text-xl tracking-wider xl:text-3xl'>Autono In Numbers</p>
+          <p className='text-xl tracking-wider xl:text-3xl'>Autovate In Numbers</p>
           <div className='grid grid-cols-2 grid-rows-2 gap-10 sm:gap-14 xl:gap-20'>
             {
               data.map((item, index) => {

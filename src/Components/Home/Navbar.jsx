@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className='max-w-7xl h-16 mx-auto flex items-center'>
                 <nav className='flex justify-between items-center w-full'>
                     <div>
-                        <Link to="/" className='tracking-[.30em] text-xl font-extrabold'>AUTONO</Link>
+                        <Link to="/" className='tracking-[.30em] text-xl font-extrabold'>AUTOVATE</Link>
                     </div>
                     <div className='md:flex items-center gap-x-8'>
                         <div className='hidden md:flex items-center gap-x-8'>

@@ -12,7 +12,7 @@ const HeroTech = () => {
                 </div>
             </div>
             <div className='text-center px-4 sm:px-14 md:px-24 lg:px-32 xl:px-52 xl:pt-10'>
-                <p className='md:tracking-wider md:leading-relaxed text-lg'>If you want to rely on a trusted partner offering all relevant ingredients for your dependable systems - automotive quality, Functional Safety, cybersecurity, innovative products, system understanding, operational excellence - then you need Autono and Autono automotive dependability.</p>
+                <p className='md:tracking-wider md:leading-relaxed text-lg'>If you want to rely on a trusted partner offering all relevant ingredients for your dependable systems - automotive quality, Functional Safety, cybersecurity, innovative products, system understanding, operational excellence - then you need Autovate and Autovate automotive dependability.</p>
             </div>
         </div>
     )

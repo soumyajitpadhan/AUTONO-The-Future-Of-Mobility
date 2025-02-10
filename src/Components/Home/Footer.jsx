@@ -13,12 +13,12 @@ const Footer = () => {
           <h2 className='text-3xl font-bold mb-5'>Contact Us</h2>
           <div className='flex flex-col gap-5'>
             <div>
-              <p>Autono Headquarters</p>
+              <p>Autovate Headquarters</p>
               <p>555 Innovation Drive</p>
               <p>Tech Valley, Future City, 12345</p>
             </div>
             <p>Phone: +91 1234567890</p>
-            <p>Email: contact@autono.com</p>
+            <p>Email: contact@autovate.com</p>
           </div>
         </div>
         <div className='mt-9 md:mt-0'>
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='border-t border-gray-600 pt-5 text-center mt-12 mb-0 tracking-widest'>
-        <p>&copy; 2025 AUTONO. All rights reserved</p>
+        <p>&copy; 2025 Autovate. All rights reserved</p>
       </div>
     </footer>
   )

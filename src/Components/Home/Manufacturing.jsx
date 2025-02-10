@@ -13,7 +13,7 @@ const Manufacturing = () => {
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white w-[90%] max-w-lg h-[80%] max-h-[90vh] rounded-3xl p-10 flex flex-col justify-evenly md:px-16 md:left-16 md:top-20 md:transform-none md:w-[60%] md:max-w-sm lg:left-44 lg:h-[90%] lg:max-h-[90vh] lg:w-[70%] lg:max-w-lg lg:top-10 lg:py-0 lg:px-20'>
         <div className=' absolute border-l border-white left-[7%] top-[10%] h-[60vh] lg:h-[72vh]'></div>
         <div className='flex flex-col gap-y-5 '>
-          <p className='text-sm md:tracking-wide lg:tracking-widest'>WHY AUTONO</p>
+          <p className='text-sm md:tracking-wide lg:tracking-widest'>WHY AUTOVATE</p>
           <p className='text-lg tracking-wider md:text-xl md:leading-relaxed lg:text-2xl lg:leading-loose'>A different approach, using a new method of manufacturing.</p>
         </div>
         <div className='flex flex-col gap-y-5'>
